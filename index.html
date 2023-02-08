@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
+  <title>First Project With Bootstrap</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,12 +13,25 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
   <header>
-    <h1 class="text-center bg-primary text-white py-3 mb-1">Learn with Alif</h1>
+    <div class="row bg-primary">
+      <div class="col-lg-5">
+        <h1 class="text-center bg-primary text-white py-3 mb-1">Learn with Alif</h1>
+      </div>
+      <div class="col-lg-7 bg-primary">
+        <ul class="nav justify-content-center py-lg-3 pb-2">
+          <li class="nav-item"><a class="nav-link text-white ul-on-hvr" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white ul-on-hvr" href="#">Tutorial</a></li>
+          <li class="nav-item"><a class="nav-link text-white ul-on-hvr" href="#">Contact Me</a></li>
+        </ul>
+      </div>
+    </div>
+    
   </header>
   <main class="container">
     <div class="service-section bg-light pt-3">
@@ -53,9 +66,133 @@
         </div>
       </div>
     </div>
+    <!-- About section start -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="images/Alif.png" alt="" class="img-fluid rounded-circle p-5 p-md-3 p-lg-2">
+      </div>
+      <div class="col-lg-8">
+        <div class="title mb-3">
+          <h3 class="fw-bolder">About Me</h3>
+          <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos tempora dolores incidunt atque a eaque ipsa dolorem minus. Iste perspiciatis assumenda autem nemo officia ducimus distinctio architecto laudantium praesentium neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aliquam odit quia non ipsum natus doloribus vel animi amet, qui quis provident rem libero. Itaque non esse dignissimos a eligendi... <a href="#demo" data-bs-toggle="collapse">See more!</a></p>
+          
+          <div class="collapse" id="demo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laborum nihil dolorum eum id ut tempora aspernatur, officiis aut veniam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro neque optio amet? Voluptate aut, blanditiis quia non numquam esse, at in asperiores amet suscipit laudantium repudiandae! Repellat explicabo facere veritatis.</p>
+          </div>
+
+          <div class="btn-group">
+
+            <button class="btn btn-outline-primary mb-3 btn-sm">Cd Downloaded</button>
+          <a href="#" target="_blank" class="btn btn-outline-primary mb-3 btn-sm">Button in anchor tag</a>
+          <button class="btn btn-outline-primary mb-3 btn-sm">Cd Downloaded</button>
+
+          </div>
+
+          
+          <div class="alert alert-primary alert-dismissible" role="alert">
+            <button class="btn-close" data-bs-dissmiss="alert" aria-label="close">
+            </button>
+            Have you visited my instagram? <a href="#" class="text-decoration-none ">Visit here</a>
+          </div>
+          <div class="alert alert-danger alert-dismissible" role="alert">
+            <button class="btn-close" data-bs-dissmiss="alert" aria-label="close">
+            </button>
+            Have you visited my Linkedin? <a href="#" class="text-decoration-none ">Visit here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About section end -->
+    <!-- customer review section start -->
+    <div class="customer-review bg-light">
+      <div class="title text-center mb-3">
+        <h3 class="fw-bolder">Customer Review</h3>
+      </div>
+      <div class="row text-center">
+        <div class="col-lg-4">
+          <blockquote class="blockquote">
+            <i class="fas fa-user-circle fa-3x p-2"></i>
+            <p class="text-start">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, cumque <abbr title="Computer Science Engneering">CSE</abbr>!
+            </p>
+            <footer class="blockquote-footer text-start pt-1">
+              Alif Ahammed in <cite>Facebook</cite>
+            </footer>
+          </blockquote>
+        </div>
+        <div class="col-lg-4">
+          <blockquote class="blockquote">
+            <i class="fas fa-user-circle fa-3x p-2"></i>
+            <p class="text-start">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, cumque <abbr title="Computer Science Engneering">CSE</abbr>!
+            </p>
+            <footer class="blockquote-footer text-start pt-1">
+              Alif Ahammed in <cite>Facebook</cite>
+            </footer>
+          </blockquote>
+        </div>
+        <div class="col-lg-4">
+          <blockquote class="blockquote">
+            <i class="fas fa-user-circle fa-3x p-2"></i>
+            <p class="text-start">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, cumque <abbr title="Computer Science Engneering">CSE</abbr>!
+            </p>
+            <footer class="blockquote-footer text-start pt-1">
+              Alif Ahammed in <cite>Facebook</cite>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+    <!-- customer review section end -->
+    <!-- toggleable dynamic tab start -->
+    <div class="other-section my-3">
+      <h3 class="bg-primary text-center text-white py-2">Dynamic Toggleable tab & pill</h3>
+
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="edu-tab" data-bs-toggle="tab" data-bs-target="#edu" type="button" role="tab" aria-controls="edu" aria-selected="true">Education</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="skl-tab" data-bs-toggle="tab" data-bs-target="#skl" type="button" role="tab" aria-controls="skl" aria-selected="false">Skill</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="hby-tab" data-bs-toggle="tab" data-bs-target="#hby" type="button" role="tab" aria-controls="hby" aria-selected="false">Hobby</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="edu" role="tabpanel" aria-labelledby="edu-tab">
+          <p><span class="text-success">Education</span> : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci fugiat ad assumenda dolores sint iure iusto itaque, magni blanditiis ratione? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, amet. Laudantium animi perferendis quis ipsum culpa a pariatur, quidem iure?</p>
+        </div>
+        <div class="tab-pane fade" id="skl" role="tabpanel" aria-labelledby="skl-tab">
+          <p><span class="text-info">Skill</span> : Dolorum rerum mollitia veniam possimus cumque sit officia? Natus dolorum facilis eius illum, dicta minus ad esse eaque quasi asperiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, amet. Laudantium animi perferendis quis ipsum culpa a pariatur, quidem iure?</p>
+        </div>
+        <div class="tab-pane fade" id="hby" role="tabpanel" aria-labelledby="hby-tab">
+          <p><span class="text-secondary">Hobby</span> : Consequatur earum enim quos iusto harum possimus quod sunt laboriosam quisquam, molestias ullam amet quaerat velit, consectetur ea, expedita praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, amet. Laudantium animi perferendis quis ipsum culpa a pariatur, quidem iure?</p>
+        </div>
+      </div>
+      
+    </div>
+    <!-- toggleable dynamic tab end -->
+    <!-- student list section start  -->
+    <div class="student-list">
+      <h3 class="text-center text-uppercase bg-info text-white mt-2">List of Students</h3>
+      <ul class="list-group">
+        <li class="list-group-item bg-primary text-white">Zim</li>
+        <li class="list-group-item bg-info text-white">Rakib</li>
+        <li class="list-group-item bg-danger text-white">Niloy</li>
+      </ul>
+    </div>
+    <!-- student list section end  -->
   </main>
-  <footer>
+  <footer class="bg-dark mt-2">
     <!-- place footer here -->
+    <ul class="pagination py-3 justify-content-center">
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+    </ul>
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
