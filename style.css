@@ -1,3 +1,7 @@
 .ul-on-hvr:hover{
   text-decoration: underline;
 }
+.carousel-images{
+  height: 300px;
+  margin: 0 auto;
+}
